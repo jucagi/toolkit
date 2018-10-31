@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Inicio from '@/components/Inicio'
+import QuienesSomos from '@/components/QuienesSomos'
+import ModoDeUso from '@/components/ModoDeUso'
 
 Vue.use(Router)
 
@@ -10,6 +12,16 @@ export default new Router({
       path: '/',
       name: 'Inicio',
       component: Inicio
+    },
+    {
+      path: '/quienesSomos',
+      name: 'QuienesSomos',
+      component: QuienesSomos
+    },
+    {
+      path: '/modoDeUso',
+      name: 'ModoDeUso',
+      component: ModoDeUso
     }
   ]
 })

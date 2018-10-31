@@ -10,7 +10,7 @@
         >
           <v-img :src="logoToolkit" alt="Logo de Toolkit IA"></v-img>
         </v-avatar>
-        <v-btn>
+        <v-btn to="/modoDeUso">
           Iniciar
         </v-btn>
       </v-flex>
@@ -26,7 +26,7 @@
       <v-flex lg6 class="centrado">
         <p>
           <span>Sobre ToolKits:</span><br />
-          <a to="quienes">¿Quiénes somos?</a><br />
+          <router-link to="/quienesSomos">¿Quiénes somos?</router-link><br />
           <a href="http://centrodeinnovacion.gov.co">centrodeinnovacion.gov.co</a><br />
           <a href="http://cien.net.co">cien.net.co</a>
         </p>
@@ -52,20 +52,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
 .centrado {
   text-align: center;
 }

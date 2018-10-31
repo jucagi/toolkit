@@ -38,11 +38,13 @@
       <v-btn icon @click.stop="fixed = !fixed">
         <v-icon>remove</v-icon>
       </v-btn> -->
-      <v-avatar
-        :size="35"
-      >
-        <v-img :src="logo" alt="Logo de Toolkit IA"></v-img>
-      </v-avatar>
+      <router-link to="/">
+        <v-avatar
+          :size="35"
+        >
+          <v-img :src="logo" alt="Logo de Toolkit IA"></v-img>
+        </v-avatar>
+      </router-link>
       <v-toolbar-title v-text="title"></v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn flat small>Ingreso</v-btn>
