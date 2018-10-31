@@ -72,7 +72,9 @@
       </v-list>
     </v-navigation-drawer>
     <v-footer :fixed="fixed" app>
-      <span>&copy; 2017</span>
+      <v-flex xs12 text-align="center">
+        <v-card-title>PNUD, MINTIC UNICORDOBA y CICC &copy; 2018</v-card-title>
+      </v-flex>
     </v-footer>
   </v-app>
 </template>
