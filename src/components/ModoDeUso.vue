@@ -29,13 +29,13 @@
             </v-flex>
           </v-layout>
 
-          <v-layout row>
-            <v-flex xs6>
-              <v-card color="info">
+          <v-layout>
+            <v-flex>
+              <v-card :color="colors.grey.lighten3">
                 <v-card-title primary-title>
                   <v-layout column centered>
                     <div class="headline">No tienes información y tienes poco tiempo</div>
-                    <v-btn large color="primary">
+                    <v-btn large color="primary" outline>
                       <v-icon>play_circle_outline</v-icon>
                       <span> Demo</span>
                     </v-btn>
@@ -49,20 +49,20 @@
               </v-card>
             </v-flex>
 
-            <v-flex xs6>
-              <v-card color="success">
+            <v-flex>
+              <v-card :color="colors.grey.lighten3">
                 <v-card-title primary-title>
                   <v-layout column centered>
                     <div class="headline">¿Quieres ingresar y seguir probando?</div>
-                    <v-btn large color="primary">
+                    <v-btn large color="primary" outline>
                       <v-icon>playlist_add_check</v-icon>
-                      <span> Dly</span>
+                      <span> DIY</span>
                     </v-btn>
                   </v-layout>
                   <v-divider light></v-divider>
                   <v-layout column centered>
                     <h3>Crea tu propia hisoria</h3>
-                    <p>Do it your self con docs propios, no del caso de uso.</p>
+                    <p>Do It Your self (DIY) con documentos propios, no del caso de uso.</p>
                   </v-layout>
                 </v-card-title>
               </v-card>
@@ -77,11 +77,13 @@
 
 <script>
 import logoToolkit from '@/assets/logoToolkit.svg'
+import colors from 'vuetify/es5/util/colors'
 
 export default {
   data () {
     return {
-      logoToolkit
+      logoToolkit,
+      colors
     }
   }
 }

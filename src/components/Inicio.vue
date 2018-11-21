@@ -37,7 +37,7 @@
 
 <script>
 import logoToolkit from '@/assets/logoToolkit.svg'
-import fondo from '@/assets/Fondo2.png'
+import fondo from '@/assets/Fondo4.png'
 
 export default {
   data () {

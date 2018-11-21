@@ -5,18 +5,30 @@ import App from './App'
 import router from './router'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
+import colors from 'vuetify/es5/util/colors'
 
-Vue.use(Vuetify, {
+const tema = {
   theme: {
-    primary: '#C51162',
-    secondary: '#FFEA00',
-    accent: '#009999',
-    error: '#FF6600',
-    info: '#8BC34A',
-    success: '#FFA726',
-    warning: '#7E57C2'
+    primary: colors.purple.base,
+    secondary: colors.cyan.base,
+    accent: colors.deepPurple.base,
+    error: colors.pink.base,
+    warning: colors.orange.base,
+    info: colors.blue.base,
+    success: colors.teal.base
   }
-})
+  // theme: {
+  //   primary: '#7E57C2',
+  //   secondary: '#8BC34A',
+  //   accent: '#FFA726',
+  //   error: '#C51162',
+  //   info: '#009999',
+  //   success: '#FFA726',
+  //   warning: '#FF6600'
+  // }
+}
+
+Vue.use(Vuetify, tema)
 
 Vue.config.productionTip = false
 

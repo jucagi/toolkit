@@ -21,7 +21,7 @@
           <v-layout row>
             <v-flex xs12 class="centrado">
               <v-avatar
-                :size="55"
+                :size="100"
               >
                 <v-img :src="logoToolkit" alt="Logo de Toolkit IA"></v-img>
               </v-avatar>
